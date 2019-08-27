@@ -1,0 +1,21 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+$route['default_controller'] = 'Index';
+$route['Home']='Index';
+$route['404_override'] = '';
+$route['translate_uri_dashes'] = FALSE;
+$route['Admin/Login']='Index/login';
+$route['Register']='Index/register';
+$route['registerDetails/(:any)/(:any)/(:any)']='Index/registerDetails/$1/$2/$3';
+$route['phoneBookInsert/(:any)/(:any)/(:any)']='Index/phoneBookInsert/$1/$2/$3';
+$route['checkLogin/(:any)/(:any)']='Index/checkLogin/$1/$2';
+$route['Admin/Home']='Index/home';
+$route['Admin/View']='Index/viewRecord';
+$route['getRecords']='Index/getRecords';
+$route['deleteRecord/(:any)']='Index/deleteRecord/$1';
+$route['Admin/Logout']='Index/logout';
+$route['getAllRecords']='Index/getAllRecords';
+$route['searchRecord']='Index/searchRecord';
+$route['getUserDetails2/(:any)']='Index/getUserDetails2/$1';
+$route['editRecord/(:any)']='Index/editRecord/$1';
+$route['updateRecord/(:any)/(:any)/(:any)/(:any)']='Index/updateRecord/$1/$2/$3/$4';
